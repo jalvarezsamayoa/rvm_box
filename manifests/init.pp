@@ -1,5 +1,4 @@
-class rvm_box {
-  $ruby_version = $::ruby_version
+class rvm_box($ruby_version) {
 
   Exec {
     path => "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
